@@ -118,3 +118,20 @@ float matriz_det(matriz matriz_referencia){
         exit(1);
     }
 }
+
+matriz matriz_pow(matriz matriz_referencia, int expoente){
+    matriz matriz_resultado(matriz_referencia.linha, matriz_referencia.coluna);
+    for(int i=0; i<matriz_resultado.linha; i++){
+        for(int j=0; j<matriz_resultado.coluna; j++){
+            if(i==j){
+                matriz_resultado.primeiro_elemento_matriz[(i*matriz_resultado.coluna)+j] = 1;
+            }
+            else{
+                matriz_resultado.primeiro_elemento_matriz[(i*matriz_resultado.coluna)+j] = 0;
+            }
+        }
+    }
+    for(int i=0; i<expoente; i++){
+        matriz_resultado = matriz_multi(matriz_referencia, matriz_resultado);
+    }
+}

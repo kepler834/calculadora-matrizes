@@ -25,4 +25,6 @@
     matriz matriz_transpor(matriz matriz_referencia);
 
     float matriz_det(matriz matriz_referencia);
+
+    matriz matriz_pow(matriz matriz_referencia, int expoente);
 #endif
