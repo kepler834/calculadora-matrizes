@@ -1,6 +1,7 @@
 # calculadora-matrizes
 biblioteca contendo operações fundamentais
-  objeto:
+  
+ objeto:
     1. matriz => é um objeto que define uma matriz, dessa forma, é composto pelas seguintes informações: linha, coluna e elementos.
       1.1. SINTAX:  class matriz{
                       public:
